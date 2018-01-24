@@ -21,7 +21,10 @@
   "homepage": "https://github.com/euroclydon37/multi-rsync#readme",
   "dependencies": {
     "commander": "^2.13.0",
-    "lodash": "^4.17.4"
+    "listr": "^0.13.0",
+    "lodash": "^4.17.4",
+    "rsync": "^0.6.1",
+    "rxjs": "^5.5.6"
   },
   "devDependencies": {
     "eslint": "^4.15.0",
