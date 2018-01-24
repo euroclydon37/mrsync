@@ -4,7 +4,7 @@
   "description": "Creates an rsync process for each top level item in a directory",
   "main": "bin/mrsync.js",
   "bin": {
-    "mrsync": "mrsync.js"
+    "mrsync": "bin/mrsync.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
