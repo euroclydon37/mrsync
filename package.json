@@ -1,6 +1,6 @@
 {
   "name": "mrsync",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Creates an rsync process for each top level item in a directory",
   "main": "bin/mrsync.js",
   "bin": {
