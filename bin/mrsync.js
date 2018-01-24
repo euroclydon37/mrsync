@@ -56,7 +56,7 @@ function run (dest) {
   })
 
   // Build tasks and run
-  const tasks = new Listr(taskArray, { concurrent: true })
+  const tasks = new Listr(taskArray, { concurrent: 6 })
   tasks.run()
     .then(() => {
       _.forEach(errors, e => {
