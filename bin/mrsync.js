@@ -48,11 +48,13 @@ function run (dest) {
 
   // Assemble list
   _.forEach(sourceContents, item => {
-    let srcPath = path.join(source.replace('&', '\\&'), item)
-    taskArray.push({
-      title: srcPath,
-      task: () => transfer(srcPath, dest)
-    })
+    if (!_.includes(program.exclude, item)) {
+      let srcPath = path.join(source.replace('&', '\\&'), item)
+      taskArray.push({
+        title: srcPath,
+        task: () => transfer(srcPath, dest)
+      })
+    }
   })
 
   // Build tasks and run
