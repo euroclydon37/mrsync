@@ -1,0 +1,28 @@
+{
+  "name": "mrsync",
+  "version": "1.0.0",
+  "description": "A utility for backing up directories both locally and over the network.",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/euroclydon37/mrsync.git"
+  },
+  "keywords": [
+    "backup",
+    "rsync",
+    "node",
+    "sync",
+    "file",
+    "folder",
+    "directory"
+  ],
+  "author": "Jeremy Dunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/euroclydon37/mrsync/issues"
+  },
+  "homepage": "https://github.com/euroclydon37/mrsync#readme"
+}
