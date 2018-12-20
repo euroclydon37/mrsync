@@ -4,7 +4,8 @@
   "description": "A utility for backing up directories both locally and over the network.",
   "main": "bin/index.js",
   "scripts": {
-    "test": "ava"
+    "test:m": "node bin/backup.js",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/euroclydon37/mrsync/issues"
   },
-  "homepage": "https://github.com/euroclydon37/mrsync#readme"
+  "homepage": "https://github.com/euroclydon37/mrsync#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
