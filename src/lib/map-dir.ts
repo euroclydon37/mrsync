@@ -1,9 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-
-const flattenDeep = (arr) => Array.isArray(arr)
-  ? arr.reduce( (a, b) => a.concat(flattenDeep(b)) , [])
-  : [arr]
+import fs from 'fs'
+import path from 'path'
+import { flattenDeep } from 'lodash'
 
 const mapDir = async dir => new Promise((resolve, reject) => {
 	fs.readdir(dir, { withFileTypes: true }, (err, files) => {
@@ -25,7 +22,7 @@ const mapDir = async dir => new Promise((resolve, reject) => {
 	})
 })
 
-const getPaths = map => {
+const getPaths = (map) => {
 	const paths = map.items.map(item => {
 		if (item.type === 'file') return `${map.name}/${item.name}`
 		return getPaths(item)

@@ -27,6 +27,12 @@
   },
   "homepage": "https://github.com/euroclydon37/mrsync#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.120",
+    "@types/node": "^10.12.24",
+    "lodash": "^4.17.11"
   }
 }
