@@ -28,5 +28,8 @@
   "homepage": "https://github.com/euroclydon37/mrsync#readme",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
   }
 }
